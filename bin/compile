@@ -20,6 +20,7 @@ BUILDPACK_PATH=$compile_buildpack_dir source $compile_buildpack_dir/compile-exte
 
 translated_url=$($compile_buildpack_dir/compile-extensions/bin/download_dependency nginx.tgz /tmp)
 echo "Downloaded [$translated_url]"
+echo "helloworld from the compile script"
 compile_nginx_tgz="/tmp/nginx.tgz"
 cd $build_dir
 
